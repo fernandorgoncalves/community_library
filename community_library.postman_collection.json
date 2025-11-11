@@ -1,0 +1,312 @@
+{
+  "info": {
+    "name": "community_library",
+    "description": "Collection importada do Thunder Client",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "CREATE",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"thiago\",\n  \"email\": \"thiago@gmail.com\",\n  \"password\": \"123456\",\n  \"avatar\": \"https://cdn-icons-png.flaticon.com/512/149/149071.png\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["users"]
+            }
+          }
+        },
+        {
+          "name": "GETALL",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTUxNzA5LCJleHAiOjE3MTc2MzgxMDl9.5rZUeWBWUKK5Xq_PTnj8IsQMyFTDP7ZakA4UZkNQumg",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["users"]
+            }
+          }
+        },
+        {
+          "name": "LOGIN",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"thiago@gmail.com\",\n  \"password\": \"1234567\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/users/login",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["users", "login"]
+            }
+          }
+        },
+        {
+          "name": "GETBYID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTUxNzA5LCJleHAiOjE3MTc2MzgxMDl9.5rZUeWBWUKK5Xq_PTnj8IsQMyFTDP7ZakA4UZkNQumg",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/users/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["users", "1"]
+            }
+          }
+        },
+        {
+          "name": "UPDATE",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"thiagolima\",\n  \"email\": \"thiago@gmail.com\",\n  \"password\": \"1234567\",\n  \"avatar\": \"https://cdn-icons-png.flaticon.com/512/149/149071.png\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["users"]
+            }
+          }
+        },
+        {
+          "name": "DELETE",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTUzMjkyLCJleHAiOjE3MTc2Mzk2OTJ9.aC4djTMkFFfNoteUocoejDuvz3yWBKFm0FgzsbgKROo",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/users/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["users", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "book",
+      "item": [
+        {
+          "name": "CREATE",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTU2NDI5LCJleHAiOjE3MTc2NDI4Mjl9.65qBcwXhk28xiv2jzr5liq-PA7F5Na2gKLhWC0UqSaI",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"O poder do habito3\",\n  \"author\": \"Charles Duhigg\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/books",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["books"]
+            }
+          }
+        },
+        {
+          "name": "UPDATE",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"O poder do habito2\",\n  \"author\": \"Charles Duhigg\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/books",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["books"]
+            }
+          }
+        },
+        {
+          "name": "GETALL",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTU2NDI5LCJleHAiOjE3MTc2NDI4Mjl9.65qBcwXhk28xiv2jzr5liq-PA7F5Na2gKLhWC0UqSaI",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/books",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["books"]
+            }
+          }
+        },
+        {
+          "name": "GETBYID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["books", "1"]
+            }
+          }
+        },
+        {
+          "name": "DELETE",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/books/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["books", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "loan",
+      "item": [
+        {
+          "name": "CREATE",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTU2NDI5LCJleHAiOjE3MTc2NDI4Mjl9.65qBcwXhk28xiv2jzr5liq-PA7F5Na2gKLhWC0UqSaI",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/loans",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["loans"]
+            }
+          }
+        },
+        {
+          "name": "GETALL",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTU2NDI5LCJleHAiOjE3MTc2NDI4Mjl9.65qBcwXhk28xiv2jzr5liq-PA7F5Na2gKLhWC0UqSaI",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/loans",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["loans"]
+            }
+          }
+        },
+        {
+          "name": "GETBYID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTU2NDI5LCJleHAiOjE3MTc2NDI4Mjl9.65qBcwXhk28xiv2jzr5liq-PA7F5Na2gKLhWC0UqSaI",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/loans/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["loans", "1"]
+            }
+          }
+        },
+        {
+          "name": "DELETE",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3NTU2NDI5LCJleHAiOjE3MTc2NDI4Mjl9.65qBcwXhk28xiv2jzr5liq-PA7F5Na2gKLhWC0UqSaI",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/loans/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["loans", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
