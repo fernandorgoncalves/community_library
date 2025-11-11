@@ -21,7 +21,7 @@ function createUserRepository(newUser){
                 if(err){
                     reject(err)
                 } else{
-                    resolve({message: 'User Create'})
+                    resolve({id: this.lastID,...newUser})
                 }
             }
         )
